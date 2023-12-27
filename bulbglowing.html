@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            margin: 15px;
+            padding:15px;
+            position: relative;
+            left: 50px;
+        }
+        h1{
+            font-weight: 300;
+           font-family: sans-serif;
+        }
+      .blb{
+        background-color: rgb(213, 237, 26);
+        border-radius: 5px;
+        position: relative;
+        left:100px;
+    
+       
+        
+        
+      }
+      #bulboff{
+        background-color: rgb(230, 17, 17);
+       
+      }
+      #bulbon:hover{
+        background-color: chartreuse;
+      }
+      #bulboff:hover{
+          background-color: blueviolet;
+      }
+    </style>
+</head>
+<body>
+    <h1>My First JavaScript Project</h1>
+    
+
+
+    <div>
+     <img src="bulboff.jpg" id="bulb">
+    </div>
+
+    <button id="bulbon" class="blb" onclick="on()">ON</button>
+    <button id="bulboff" class="blb" onclick="off()">OFF</button>
+
+    <script>
+        
+      const on=()=>{
+        document.getElementById('bulb').setAttribute('src','bulbon.jpg');
+        
+      }
+      const off=()=>{
+        document.getElementById('bulb').setAttribute('src','bulboff.jpg');
+
+      }
+
+
+    </script>
+</html>
